@@ -16,7 +16,7 @@ class TestApp:
 
             user = User.query.first()
             client.post('/login', json={
-                'username': user.username
+                'username': 'Colleen'
             })
 
             response = client.get('/members_only_articles')
